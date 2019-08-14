@@ -6,6 +6,16 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "landing"
+    label: "Landing"
+    folder: "content/landing"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+     preview: false
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
@@ -18,10 +28,3 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - label: "Featured Image"
-    name: "image"
-    widget: "image"
-    default: "/img/chair.jpg"
-    media_library:
-      config:
-        multiple: true
