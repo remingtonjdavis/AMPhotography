@@ -9,6 +9,7 @@ collections:
   - name: "landing"
     label: "Landing"
     folder: "content/landing"
+    identifier_field: image
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
