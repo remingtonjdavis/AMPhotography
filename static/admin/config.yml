@@ -19,9 +19,9 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Featured Image"
-    name: "thumbnail"
+    name: "image"
     widget: "image"
-    default: "/uploads/chocolate-dogecoin.jpg"
+    default: "/img/chair.jpg"
     media_library:
       config:
         multiple: true
